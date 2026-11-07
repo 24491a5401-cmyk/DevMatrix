@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+                             https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+    <display-name>DevMatrix</display-name>
+
+    <welcome-file-list>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+
+    <!-- ============================================================ -->
+    <!-- Application-Wide Context Parameters (ServletContext)         -->
+    <!-- Module 4 requirement: Shared cross-application config       -->
+    <!-- ============================================================ -->
+    <context-param>
+        <param-name>platformName</param-name>
+        <param-value>DevMatrix — Full-Stack Combat &amp; Placement Arena</param-value>
+    </context-param>
+    <context-param>
+        <param-name>platformVersion</param-name>
+        <param-value>2.4.0-Enterprise</param-value>
+    </context-param>
+    <context-param>
+        <param-name>adminSupportEmail</param-name>
+        <param-value>director@devmatrix.internal</param-value>
+    </context-param>
+
+    <!-- ============================================================ -->
+    <!-- ServletConfig Demonstration: AdminLoginServlet               -->
+    <!-- Module 4 requirement: Servlet-specific init parameters        -->
+    <!-- ============================================================ -->
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>com.devmatrix.servlet.AdminLoginServlet</servlet-class>
+        <init-param>
+            <param-name>adminRoleTitle</param-name>
+            <param-value>Chief Technical Evaluator</param-value>
+        </init-param>
+        <init-param>
+            <param-name>adminContactEmail</param-name>
+            <param-value>evaluator.lead@devmatrix.internal</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/admin-login</url-pattern>
+    </servlet-mapping>
+
+    <!-- Session configuration: 30 minutes inactivity timeout -->
+    <session-config>
+        <session-timeout>30</session-timeout>
+    </session-config>
+
+</web-app>

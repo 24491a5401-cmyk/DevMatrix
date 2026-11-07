@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevMatrix — Next-Gen Developer Assessment &amp; Placement Arena</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">
+            <div class="brand-icon">&lt;/&gt;</div>
+            <span>DEV<span style="background: var(--brand-gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">MATRIX</span></span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="login.jsp">Student Access</a></li>
+            <li><a href="register.jsp" class="btn btn-primary" style="padding: 0.45rem 1.15rem; font-size: 0.88rem;">Enlist Cadre →</a></li>
+            <li><a href="admin-login.jsp" style="color: var(--text-muted); font-size: 0.82rem;">Evaluator Portal</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-tag">
+                <span style="display:inline-block; width:7px; height:7px; border-radius:50%; background:#10b981; box-shadow:0 0 8px #10b981;"></span>
+                NEXT-GEN PLACEMENT &amp; SKILL EVALUATION PLATFORM
+            </div>
+            <h1 class="hero-title">Forge Your Engineering Edge in the <span>Combat Matrix</span></h1>
+            <p class="hero-desc">
+                An advanced developer assessment arena built on Jakarta EE 10 Pure MVC. Master 4 combat tracks: 
+                BugHunt security triage, AlgoDrift algorithm velocity, QueryCraft ACID engines, and PlacementArena Tier-1 MNC interviews.
+            </p>
+            <div class="cta-group">
+                <a href="register.jsp" class="btn btn-primary">Start Training (Register) →</a>
+                <a href="login.jsp" class="btn btn-secondary">Student Sign-In</a>
+                <a href="admin-login.jsp" class="btn btn-secondary" style="border-style: dashed; border-color: rgba(244,63,94,0.4); color: #fda4af;">Evaluator Cockpit</a>
+            </div>
+
+            <!-- Platform Highlights Ribbon -->
+            <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem; color: var(--text-secondary); font-size: 0.88rem;">
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: var(--brand-primary); font-weight: 800;">20+</span> Industry Missions
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: var(--accent-cyan); font-weight: 800;">4</span> Specialized Tracks
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: var(--accent-emerald); font-weight: 800;">100%</span> Pure Jakarta EE MVC
+                </div>
+                <div style="display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #fbbf24; font-weight: 800;">ACID</span> Single-Attempt Locking
+                </div>
+            </div>
+        </section>
+
+        <!-- 4 Combat Domains Grid -->
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h2 style="font-size: 1.85rem; font-weight: 800; letter-spacing: -0.5px;">Four Specialized Combat Disciplines</h2>
+            <p style="color: var(--text-secondary); font-size: 0.95rem; margin-top: 0.35rem;">Each discipline evaluates key competencies required by top global engineering teams.</p>
+        </div>
+        
+        <div class="grid-4" style="margin-bottom: 3.5rem;">
+            
+            <!-- Track 1: BugHunt -->
+            <div class="track-card track-bughunt">
+                <div class="track-icon">🐛</div>
+                <div class="badge badge-bughunt" style="margin-bottom: 0.75rem;">Security &amp; Logic</div>
+                <h3 class="track-title">BugHunt</h3>
+                <p class="track-desc">
+                    Diagnose concurrency hazards, thread locks, pointer mutations, memory leaks, and off-by-one errors in enterprise Java.
+                </p>
+                <div style="font-size: 0.82rem; color: var(--accent-rose); font-weight: 700; margin-top: auto;">
+                    Defend Architecture &bull; +50-100 XP
+                </div>
+            </div>
+
+            <!-- Track 2: AlgoDrift -->
+            <div class="track-card track-algodrift">
+                <div class="track-icon">⚡</div>
+                <div class="badge badge-algodrift" style="margin-bottom: 0.75rem;">DSA &amp; Big-O</div>
+                <h3 class="track-title">AlgoDrift</h3>
+                <p class="track-desc">
+                    Optimize asymptotic complexity, graph traversals, bitwise manipulations, monotonic stacks, and dynamic programming states.
+                </p>
+                <div style="font-size: 0.82rem; color: var(--accent-cyan); font-weight: 700; margin-top: auto;">
+                    Asymptotic Velocity &bull; +50-100 XP
+                </div>
+            </div>
+
+            <!-- Track 3: QueryCraft -->
+            <div class="track-card track-querycraft">
+                <div class="track-icon">🗄️</div>
+                <div class="badge badge-querycraft" style="margin-bottom: 0.75rem;">SQL &amp; ACID Engines</div>
+                <h3 class="track-title">QueryCraft</h3>
+                <p class="track-desc">
+                    Solve relational query bottlenecks, index scans, deadlocks, composite primary keys, and multi-table join aggregations.
+                </p>
+                <div style="font-size: 0.82rem; color: var(--accent-amber); font-weight: 700; margin-top: auto;">
+                    High-Throughput ACID &bull; +50-100 XP
+                </div>
+            </div>
+
+            <!-- Track 4: PlacementArena -->
+            <div class="track-card track-placement">
+                <div class="track-icon">🎯</div>
+                <div class="badge badge-placement" style="margin-bottom: 0.75rem;">Tier-1 MNC Simulator</div>
+                <h3 class="track-title">PlacementArena</h3>
+                <p class="track-desc">
+                    Real assessment questions curated from technical interview rounds at Amazon, Google, TCS, Infosys, and Cognizant.
+                </p>
+                <div style="font-size: 0.82rem; color: var(--accent-emerald); font-weight: 700; margin-top: auto;">
+                    Campus Placement Ready &bull; +50-100 XP
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Live Cadre Persona Seed Roster -->
+        <div class="card" style="margin-bottom: 3.5rem; background: linear-gradient(180deg, rgba(15,23,42,0.85) 0%, rgba(10,14,26,0.95) 100%);">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">👩‍💻 Active Cadet Profiles (Viva Evaluation Ready)</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.88rem; margin-top: 0.25rem;">
+                        Pre-configured test cadres with distinct progress levels, solved challenges, and DevXP.
+                    </p>
+                </div>
+                <a href="login.jsp" class="btn btn-secondary" style="font-size: 0.82rem; padding: 0.4rem 0.9rem;">Quick Sign-In →</a>
+            </div>
+            
+            <div class="grid-4" style="gap: 1rem; margin-top: 0.5rem;">
+                <div style="background: rgba(255,255,255,0.03); padding: 1.15rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                        <span style="font-weight: 800; color: #fff;">Ananya</span>
+                        <span class="badge badge-placement">Level 3</span>
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.75rem;">5 Missions Solved &bull; 400 DevXP</div>
+                    <a href="login.jsp?demo=ananya" class="quick-chip" style="font-size: 0.78rem;">Test Login →</a>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); padding: 1.15rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                        <span style="font-weight: 800; color: #fff;">Sravani</span>
+                        <span class="badge badge-algodrift">Level 2</span>
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.75rem;">3 Missions Solved &bull; 250 DevXP</div>
+                    <a href="login.jsp?demo=sravani" class="quick-chip" style="font-size: 0.78rem;">Test Login →</a>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); padding: 1.15rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                        <span style="font-weight: 800; color: #fff;">Kavya</span>
+                        <span class="badge badge-querycraft">Level 2</span>
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.75rem;">2 Missions Solved &bull; 175 DevXP</div>
+                    <a href="login.jsp?demo=kavya" class="quick-chip" style="font-size: 0.78rem;">Test Login →</a>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); padding: 1.15rem; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.4rem;">
+                        <span style="font-weight: 800; color: #fff;">Meghana</span>
+                        <span class="badge badge-bughunt">Level 1</span>
+                    </div>
+                    <div style="font-size: 0.82rem; color: var(--text-secondary); margin-bottom: 0.75rem;">1 Mission Solved &bull; 75 DevXP</div>
+                    <a href="login.jsp?demo=meghana" class="quick-chip" style="font-size: 0.78rem;">Test Login →</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5-Tier Progression Engine -->
+        <div class="card" style="margin-bottom: 3.5rem;">
+            <div class="card-header">
+                <div>
+                    <h3 class="card-title">🎖️ 5-Tier Engineering Rank Progression</h3>
+                    <p style="color: var(--text-secondary); font-size: 0.88rem; margin-top: 0.25rem;">
+                        Earn verified DevXP across all 4 disciplines to unlock enterprise engineering titles.
+                    </p>
+                </div>
+                <span class="badge badge-xp">ACID Verified</span>
+            </div>
+            
+            <div class="grid-4" style="gap: 1rem; margin-top: 1rem;">
+                <div style="background: rgba(255,255,255,0.03); padding: 1.25rem; border-radius: var(--radius-md); border-top: 3px solid #64748b;">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 800; letter-spacing: 0.5px;">LEVEL 1 (0-149 XP)</div>
+                    <div style="font-weight: 800; color: #e2e8f0; font-size: 1.1rem; margin-top: 0.35rem;">Code Novice</div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Fundamental logic &amp; syntax comprehension</div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); padding: 1.25rem; border-radius: var(--radius-md); border-top: 3px solid var(--accent-cyan);">
+                    <div style="font-size: 0.75rem; color: var(--accent-cyan); font-weight: 800; letter-spacing: 0.5px;">LEVEL 2 (150-399 XP)</div>
+                    <div style="font-weight: 800; color: #e2e8f0; font-size: 1.1rem; margin-top: 0.35rem;">Syntax Hunter</div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Concurrency &amp; algorithmic triage</div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); padding: 1.25rem; border-radius: var(--radius-md); border-top: 3px solid var(--accent-emerald);">
+                    <div style="font-size: 0.75rem; color: var(--accent-emerald); font-weight: 800; letter-spacing: 0.5px;">LEVEL 3 (400-749 XP)</div>
+                    <div style="font-weight: 800; color: #e2e8f0; font-size: 1.1rem; margin-top: 0.35rem;">System Architect</div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Multi-track mastery &amp; ACID design</div>
+                </div>
+
+                <div style="background: rgba(255,255,255,0.03); padding: 1.25rem; border-radius: var(--radius-md); border-top: 3px solid var(--brand-primary);">
+                    <div style="font-size: 0.75rem; color: #c7d2fe; font-weight: 800; letter-spacing: 0.5px;">LEVEL 4-5 (750+ XP)</div>
+                    <div style="font-weight: 800; color: #e2e8f0; font-size: 1.1rem; margin-top: 0.35rem;">Lead &amp; Principal</div>
+                    <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 0.25rem;">Apex Hall of Masters induction</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Academic Architectural Compliance -->
+        <div class="grid-2">
+            <div class="card">
+                <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.85rem; color: var(--accent-cyan);">⚙️ Strict Architectural Governance</h4>
+                <ul style="list-style: none; color: var(--text-secondary); font-size: 0.92rem; display: flex; flex-direction: column; gap: 0.65rem;">
+                    <li>✔ <strong>Pure MVC Pattern:</strong> Strict separation of JavaBeans, Servlets, and Views.</li>
+                    <li>✔ <strong>Pure JSP Scriptlets:</strong> Zero EL (<code>${...}</code>) and zero JSTL tags as mandated.</li>
+                    <li>✔ <strong>Jakarta EE 10:</strong> Running on Apache Tomcat 10.1 (<code>jakarta.servlet.*</code>).</li>
+                    <li>✔ <strong>ACID Atomic Transactions:</strong> Single-attempt verification with commit/rollback isolation.</li>
+                </ul>
+            </div>
+            
+            <div class="card">
+                <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.85rem; color: var(--accent-emerald);">🛡️ Placement Readiness Engine</h4>
+                <ul style="list-style: none; color: var(--text-secondary); font-size: 0.92rem; display: flex; flex-direction: column; gap: 0.65rem;">
+                    <li>✔ <strong>MNC Company Tagging:</strong> Target Amazon, Google, TCS, and Infosys problems.</li>
+                    <li>✔ <strong>Architectural Post-Mortem:</strong> Instant technical explanations on every trial.</li>
+                    <li>✔ <strong>3D Glass Podium:</strong> Live competitive rankings with Gold, Silver, and Bronze slots.</li>
+                    <li>✔ <strong>Evaluator Cockpit:</strong> Full instructor dashboard with dynamic mission injection.</li>
+                </ul>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 DevMatrix Engineering Arena &bull; Pure Jakarta EE 10 MVC Architecture &bull; Designed for University Technical Evaluation</p>
+    </footer>
+
+</body>
+</html>

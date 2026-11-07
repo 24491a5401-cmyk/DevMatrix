@@ -1,0 +1,15 @@
+# Compiled class files
+build/
+bin/
+*.class
+
+# Temporary / OS files
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Keep Eclipse project metadata so it can be directly imported via File > Import
+!.project
+!.classpath
+!.settings/
